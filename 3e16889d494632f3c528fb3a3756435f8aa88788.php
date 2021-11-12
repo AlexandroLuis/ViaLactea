@@ -4,9 +4,9 @@
 		<tr>
 			<td width="75px">ID</td>
 			<td width="130px">IP</td>
-			<td width="300px">DATE</td>
-			<td width="130px">BROWSER</td>
-			<td width="130px">OP SISTEM</td>
+			<td width="200px">DATE</td>
+			<td width="170px">BROWSER</td>
+			<td width="170px">OP SISTEM</td>
 		<tr>
 	<?php  
 		$hostname='sql10.freemysqlhosting.net';	//Nome do Servidor
