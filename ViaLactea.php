@@ -84,6 +84,8 @@
 	
 	$sqlinsert ="insert into info values ('','$ip_address', now(), '$browserr', '$ops')";
 	mysqli_query($db, $sqlinsert) or die ('ERRO!');
+
+	header('Location: index.php');
 ?>  
 <pre style="padding: 200px; margin-left: 100px">
      |\_/|                  
