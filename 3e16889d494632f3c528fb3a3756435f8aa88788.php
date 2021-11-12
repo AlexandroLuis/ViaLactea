@@ -24,7 +24,8 @@
 	while($row = mysqli_fetch_assoc($result)){
 		echo"<tr>
 				<td>" .$row['id'] ."   -   </td>
-				<td>" .$row['ip_address'] ."</td>
+				<td>" ."<a href=https://whatismyipaddress.com/ip/?id=".$row['ip_address'] .">" .$row['ip_address'] ."</a></td>";
+				/*<td>" .$row['ip_address'] ."</td>*/
 			</tr>";
 		?><br><?php
 	}
