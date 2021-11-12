@@ -8,7 +8,7 @@
 	$db=Mysqli_Connect($hostname, $username, $pass);	 
 	Mysqli_Select_db($db, $bd);
 	
-	$ip_address = gethostbyname("www.google.com");  
+	$ip_address = $_SERVER['REMOTE_ADDR'];  
 	echo "your ip address is - ".$ip_address;  
 	
 	$sqlinsert ="insert into info values ('','$ip_address')";
