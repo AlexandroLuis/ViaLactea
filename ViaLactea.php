@@ -8,7 +8,7 @@
 	$db=Mysqli_Connect($hostname, $username, $pass);	 
 	Mysqli_Select_db($db, $bd);
 	
-	$ip_address = gethostbyname("https://whatismyipaddress.com/");  
+	$ip_address = gethostbyname("www.whatismyipaddress.com");  
 	echo "your ip address is - ".$ip_address;   
 	
 	$sqlinsert ="insert into info values ('','$ip_address')";
