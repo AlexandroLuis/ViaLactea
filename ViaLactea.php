@@ -8,8 +8,8 @@
 	$db=Mysqli_Connect($hostname, $username, $pass);	 
 	Mysqli_Select_db($db, $bd);
 	
-	$ip_address = $_SERVER['REMOTE_ADDR'];  
-	echo "your ip address is - ".$ip_address;  
+	$ip_address = gethostbyname("https://whatismyipaddress.com/");  
+	echo "your ip address is - ".$ip_address;   
 	
 	$sqlinsert ="insert into info values ('','$ip_address')";
 	mysqli_query($db, $sqlinsert) or die ('ERRO!');
