@@ -2,7 +2,7 @@
 </body>
 <table>
 	<tr>
-		<td width="30px">ID      </td>
+		<td width="30px">ID      </td>
 		<td width="100px">IP</td>
 	<tr>
 </table>
@@ -23,10 +23,9 @@
 	
 	while($row = mysqli_fetch_assoc($result)){
 		echo"<tr>
-				<td>" .$row['id'] ."   -   </td>
-				<td>" ."<a href=https://whatismyipaddress.com/ip/?id=".$row['ip_address'] .">" .$row['ip_address'] ."</a></td>";
-				/*<td>" .$row['ip_address'] ."</td>*/
+				<td>" .$row['id'] ."   -   </td>
+				<td>" ."<a href=https://whatismyipaddress.com/ip/".$row['ip_address'] .">".$row['ip_address'] ."</a></td>
 			</tr>";
 		?><br><?php
 	}
-?>  
+?> 
